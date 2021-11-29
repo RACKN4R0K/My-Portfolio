@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scr/css/reset.css">
+    <link rel="stylesheet" href="scr/css/menu.css">
+    <link rel="stylesheet" href="scr/css/contato.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Contato</title>
+</head>
+
+<body id="body">
+    </head>
+    <header class="cabecalhoPrincipal">
+        <a name="Top"></a>
+        <div class="container">
+            <h1 class="cabecalhoPrincipal-logo">
+                <a href="index.html"><img src="scr/assents/imagens/menu/imagem-logo.png" alt="Logo do Site" class="logo-menu" data-aos="fade-right"></a>
+
+            </h1>
+            <div class="header">
+                <div class="check-box-container">
+                    <div class="check-box-wrapper">
+                        <input type="checkbox" id="toggle">
+                        <label class="checkbox" for="toggle">
+							<div class="trace"></div>
+							<div class="trace"></div>
+							<div class="trace"></div>
+						</label>
+                        <div class="menu"></div>
+                        <nav class="menu-items">
+                            <ul>
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="quemsomos.html">Quem Somos</a>
+                                </li>
+                                <li>
+                                    <a href="bolos.html">Bolos</a>
+                                </li>
+                                <li>
+                                    <a href="loja.html">Loja</a>
+                                </li>
+                                <li>
+                                    <a href="contato.html">contato</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">Login</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ifood.com.br/"><img src="scr/assents/imagens/ifood-logo.png" alt="" class="ifood"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div class="imagem-em-preto-e-branco">
+        <img src="scr/assents/imagens/menu/Barra-de-madeira-tradicional-v3-1536x60.jpg" alt="Imagem de varios desenhos de bolo em preto e branca.">
+    </div>
+    <section class="content">
+        <div class="contato">
+            <h3>Formulário de contato</h3>
+            <form class="form" method="post" action="scr/php/contato/email.php">
+                <input type="text" class="field" name="nome" placeholder="Nome">
+                <input type="text" class="field" name="email" placeholder="email">
+                <textarea name="message" id="" cols="30" rows="10" class="field" placeholder="Digite sua mensagem aqui..."></textarea>
+                <input type="submit" value="Enviar" class="field">
+                <a href="https://api.whatsapp.com/send/?phone=5511995259291&text=Obrigado por entrar em contato com nossa equipe da royal Cake&app_absent=0
+                "><input type="button" value="Nos envie uma mensagem no whatsapp" class="field2"></a>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="rodape-principal">
+            <img src="scr/assents/imagens/menu/imagem-logo.png" alt="imagem da logo">
+            <legend class="copyright">&copy; Copyright Royal Cake - 2021</legend>
+            <a href="#Top" class="top">Voltar</a>
+        </div>
+    </footer>
+    <script src="scr/JS/menu-aberto.js"></script>
+    <script>
+        AOS.init({
+            once:true,
+            duration: 1500
+        });
+
+      </script>
+</body>
+
+</html>

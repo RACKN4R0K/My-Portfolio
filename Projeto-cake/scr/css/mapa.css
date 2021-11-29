@@ -1,0 +1,27 @@
+.menu-aberto{
+    overflow: hidden;
+}
+.mapa{
+    margin-left: 20%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+.rodape-principal{
+    background-color: #eee;
+    text-align: center;
+    padding: 40px 0;
+}
+.rodape-principal img{
+    box-shadow: 10px 10px 20px #000;
+}
+.copyright{
+    color: black;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+.top{
+    background-color: #eee;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}

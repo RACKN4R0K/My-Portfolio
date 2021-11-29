@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.menu-aberto{
+  overflow: hidden;
+}
+.conteudo-sobre{
+  text-align: justify;
+  font-size: 18px;
+  margin: 15px;
+}
+.conteudo-sobre h1,h2{
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+.conteudo-sobre ul li{
+  text-align: center;
+}
+.rodape-principal{
+  margin-top: 6.3%;
+}
+/*Rodapé*/
+.rodape-principal{
+  background-color: #eee;
+  text-align: center;
+  padding: 40px 0;
+}
+.rodape-principal img{
+  box-shadow: 10px 10px 20px #000000;
+}
+
+.copyright{
+  color: black;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
+.top{
+  background-color: #eee;
+  font-size: 20;
+  text-decoration: none;
+  color: #000;
+  
+}

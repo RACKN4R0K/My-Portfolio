@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="scr/css/reset.css">
+    <link rel="stylesheet" href="scr/css/login.css">
+</head>
+<body>
+    <main>
+        <h1>Criar conta</h1>
+        <div class="social-media">
+            <a href="#">
+                <img src="scr/assents/imagens/login/google.png" alt="Google">
+            </a>
+            <a href="#">
+                <img src="scr/assents/imagens/login/facebook.png" alt="Facebook">
+            </a>
+        </div>
+
+        <div class="alternative">
+            <span>ou</span>
+        </div>
+
+
+        <form action="php/login/guardarDados.php">
+            <input type="button submit" id="button" value="Entrar" class="entrar" oncLick="javascript:location.href='entrar.html'">
+            <input type="button" value="Voltar" id="button" oncLick="javascript:location.href='index.html'" class="entrar">
+            <label for="name">
+                <span>Nome</span>
+                <input type="text" id="name" name="txtnome" required>
+            </label>
+
+            <label for="email">
+                <span>E-mail</span>
+                <input type="email" id="email" name="txtemail" required>
+            </label>
+
+            <label>
+                <span>Senha do usuario</span>
+                <input type="password" id="password" name="txtpassword" required>
+            </label>
+            <div class="botaos">
+
+                <button type="submit" class="cadastrar">cadastrar</button>
+                
+            </div>
+        </form>
+    </main>
+    <section class="images">
+        <img src="scr/assents/imagens/login/mobile.svg" alt="Mobile">
+        <div class="circle"></div>
+    </section>
+</body>
+</html>

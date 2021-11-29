@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="scr/css/reset.css">
+    <link rel="stylesheet" href="scr/css/entrar.css">
+</head>
+<body>
+    <main>
+        <h1>Entrar</h1>
+        <div class="social-media">
+            <a href="#">
+                <img src="scr/assents/imagens/login/google.png" alt="Google">
+            </a>
+            <a href="#">
+                <img src="scr/assents/imagens/login/facebook.png" alt="Facebook">
+            </a>
+        </div>
+
+        <div class="alternative">
+            <span>OR</span>
+        </div>
+
+        <form action="php/login/verificarDados.php">
+
+            <label for="email">
+                <span>E-mail</span>
+                <input type="email" id="email" name="txtemail">
+            </label>
+
+            <label for="password">
+                <span>Senha do usuario</span>
+                <input type="password" id="password" name="txtsenha">
+            </label>
+
+                <input type="submit" value="Cadastrar" id="button">
+                <a href="index.html"><button type="button submit" id="button" value="Voltar" class="voltar" oncLick="javascript:location.href='index.html'"></button></a>
+        </form>
+    </main>
+    <section class="images">
+        <img src="scr/assents/imagens/login/mobile.svg" alt="Mobile">
+        <div class="circle"></div>
+    </section>
+</body>
+</html>
