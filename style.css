@@ -6,7 +6,9 @@ body{
     font-family: 'Poppins', sans-serif;
     color: #1e1e2a;
 }
-
+.menu-aberto{
+    overflow: hidden;
+  }
 /* HEADER */
 
 .header-container{
