@@ -187,6 +187,15 @@ a:hover{
 #darkmode{
     margin-left: 55%;
     margin-top: 20%;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: #60E1E0;
+    transition: .7s ease-in-out 0s;
+}
+#darkmode:hover{
+    background: #529c9c;
+    color: white;
+    font-size: 16px;
 }
 
 /* SOBRE MIM */
