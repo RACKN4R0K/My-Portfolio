@@ -86,7 +86,7 @@
                 Esse projeto eu fiz acompanhado um video no youtube caso queira conferir <a
                     href="https://www.youtube.com/watch?v=WzO5QlkjVLA&t=2133s&ab_channel=DevSuperior">clique aqui</a> ,
                 nesse projeto foi feito um catalogo de carros em mobile first, onde é responsivo. <a
-                    href="catalogo-carros/index.html">venha conferir</a>
+                    href="catalogo-carros/index.php">venha conferir</a>
             </div>
         </div>
         <div class="card-container">
@@ -113,7 +113,7 @@
             </div>
             <div class="card-text">Esse Projeto foi feito por mim com JavaScript é uma calculadora na web, onde me
                 ajudou muito no meu desenvolvimento em js e aprendi coisas novas com ele.
-                <a href="calculadora/calculadora.html">clique aqui</a> <br> <strong> </strong>
+                <a href="calculadora/calculadora.php">clique aqui</a> <br> <strong> </strong>
             </div>
         </div>
         <div class="card-container">
@@ -125,7 +125,7 @@
             </div>
             <div class="card-text">Esse projeto consegui testar varias funções que são bem uteis no nosso dia a dia de
                 programador, nele fiz uma pagina básica onde consigo altearar o tema de dark para light e vise-versa.
-                <a href="dark/index.html">clique aqui</a> <br> <strong> </strong>
+                <a href="dark/index.php">clique aqui</a> <br> <strong> </strong>
             </div> 
         </div>
     </main>
