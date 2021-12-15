@@ -254,7 +254,7 @@ a:hover{
     align-items: center;
     width: 90%;
 }
-.card-1{
+.card{
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -263,50 +263,12 @@ a:hover{
     align-items: center;
     justify-content: center;
     background-color: #60E1E0;
-    background-image: url(assets/meuperfil.png);
+    background-image: url(assets/WhatsApp\ Image\ 2021-12-10\ at\ 21.51.20.jpeg);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
-    color: #1e1e2a;
-    cursor: pointer;
-    
-    transition: 0.5s ease-in-out;
-}
-.card-2{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin:  3rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #60E1E0;
-    background-image: url(assets/meuperfil.png);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: grayscale(0.5);
-    color: #1e1e2a;
-    cursor: pointer;
-    
-    transition: 0.5s ease-in-out;
-}
-.card-3{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin:  3rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #60E1E0;
-    background-image: url(assets/meuperfil.png);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: grayscale(0.5);
-    color: #1e1e2a;
+    color: white;
     cursor: pointer;
     
     transition: 0.5s ease-in-out;
@@ -356,51 +318,22 @@ a:hover{
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
 }
-.card-1:hover{
+.card:hover{
     filter: unset;
 }
-.card-2:hover{
-    filter: unset;
-}
-.card-3:hover{
-    filter: unset;
-}
-.card-1:hover > .card-wrapper::before{
+.card:hover > .card-wrapper::before{
     height: 250px;
     width: 250px;
     opacity: 1;   
 }
 
-.card-1:hover > .card-wrapper p{
+.card:hover > .card-wrapper p{
     opacity: 1;
     visibility: visible;
     font-size: 14px; 
     color: white;
-}
-.card-2:hover > .card-wrapper::before{
-    height: 250px;
-    width: 250px;
-    opacity: 1;   
 }
 
-.card-2:hover > .card-wrapper p{
-    opacity: 1;
-    visibility: visible;
-    font-size: 14px; 
-    color: white;
-}
-.card-3:hover > .card-wrapper::before{
-    height: 250px;
-    width: 250px;
-    opacity: 1;   
-}
-
-.card-3:hover > .card-wrapper p{
-    opacity: 1;
-    visibility: visible;
-    font-size: 14px; 
-    color: white;
-}
 
 /* FOOTER */
 
