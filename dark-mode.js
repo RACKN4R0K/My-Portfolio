@@ -31,7 +31,9 @@ const changeColors = (colors) => {
     )
 }
 
+var button = document.querySelector('button');
 
-checkbox.addEventListener("change", ({target}) => {
-    target.checked ? changeColors(darkMode) : changeColors(initialColors)
-})
+button.onclick = function() {
+  alert("Houve um erro estou trabalhando para entregar o modo com maior rapidez possível!");
+}
+console.log("Passei por aqui")

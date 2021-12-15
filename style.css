@@ -184,6 +184,11 @@ a:hover{
     opacity: 0;
 }
 
+#darkmode{
+    margin-left: 55%;
+    margin-top: 20%;
+}
+
 /* SOBRE MIM */
 .titulo{
     font-size: 25px;
