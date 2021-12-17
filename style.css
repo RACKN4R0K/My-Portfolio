@@ -496,7 +496,7 @@ label:active:after {
         font-size: 18px;
         width: 80%;
         letter-spacing: 1px;
-        color: rgb(109, 109, 109);
+        color: var(--color-text);
     }
 }
 @media (max-width: 500px){
@@ -548,6 +548,6 @@ label:active:after {
         font-size: 18px;
         width: 80%;
         letter-spacing: 1px;
-        color: rgb(109, 109, 109);
+        color: var(--color-text);
     }
 }
