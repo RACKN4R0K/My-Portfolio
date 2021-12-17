@@ -8,17 +8,22 @@ const getStyle = (element, style) =>
 
 
 const initialColors = {
-    bg: getStyle(html, "--bg"),
-    bgPanel: getStyle(html, "--bg-panel"),
-    colorHeadings: getStyle(html, "--color-headings"),
+    bgHeader: getStyle(html, "--bg-header"),
+    colorCurriculo: getStyle(html, "--color-curriculo"),
     colorText: getStyle(html, "--color-text"),
+    bgConteudo: getStyle(html, "--bg-conteudo"),
+    colorButon: getStyle(html, "--color-buton"),
+    colorCard: getStyle(html, "--color-card"),
+    colorCurriculoBefore: getStyle(html, "--color-curriculo-before"),
 }
 
 const darkMode = {
-    bg: "#333333",
-    bgPanel: "#434343",
-    colorHeadings: "#3664FF",
-    colorText: "#B5B5B5"
+    bgHeader:"#333333",
+    colorText: "#fff",
+    colorButon: "fff",
+    bgConteudo: "#111",
+    colorCurriculoBefore: "#ddd",
+    colorCard: "#fff"
 }
 
 const transformKey = key => 
@@ -31,9 +36,6 @@ const changeColors = (colors) => {
     )
 }
 
-var button = document.querySelector('button');
-
-button.onclick = function() {
-  alert("Houve um erro estou trabalhando para entregar o modo com maior rapidez possível!");
-}
-console.log("Passei por aqui")
+checkbox.addEventListener("change", ({target}) => {
+    target.checked ? changeColors(darkMode) : changeColors(initialColors)
+})

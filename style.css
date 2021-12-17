@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
+html {
+    height: 100%;
+    font-family: 'Montserrat';
+    --color-text: #1e1e2a;
+    --bg-header: #60e1e0;
+    --bg-conteudo: #fff;
+    --color-curriculo: #eeeeee;
+    --color-buton: gray;
+    --color-curriculo-before: #60e1e0;
+    --color-card: rgb(109, 109, 109);
+    --color-link: #60e1e0;
+}
+
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: #1e1e2a;
+    color: var(--color-text);
 }
 .menu-aberto{
     overflow: hidden;
@@ -13,7 +27,7 @@ body{
 
 .header-container{
     height: 100vh;
-    background-color: #60E1E0;
+    background-color: var(--bg-header);
     background-image: url('assets/meuperfil.png') ;
     background-repeat: no-repeat;
     background-position: right;
@@ -43,9 +57,9 @@ h2{
 }
 .social-media a{
     text-decoration: none;
-    color: #1e1e2a;
+    color: var(--color-text);
     padding: 1rem 4rem;
-    border: 1px solid #1e1e2a;
+    border: 1px solid var(--color-text);
     min-width: 4rem;
     display: flex;
     align-items: center;
@@ -53,7 +67,7 @@ h2{
     transition: .5s ease-in-out;
 }
 a:hover{
-    background-color: #fff;
+    background-color: var(--bg-conteudo);
 }
 /* MENU HAMBURGER */
 
@@ -78,7 +92,7 @@ a:hover{
 .checkbox .trace{
     width: 50px;
     height: 2px;
-    background-color: #1e1e2a;
+    background-color: var(--color-text);
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -111,7 +125,7 @@ a:hover{
     height: 4px;
     width: 10px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px #fff;
+    box-shadow: 0px 0px 0px 0px var(--bg-conteudo);
     z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
@@ -135,7 +149,7 @@ a:hover{
 }
 .menu-items ul li a{
     margin: 10px 0;
-    color: #1e1e2a;
+    color: var(--color-text);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -144,7 +158,7 @@ a:hover{
 }
 
 .menu-items ul li a:hover{
-    color: #60E1E0;
+    color: var(--bg-header);
     transition: .5s ease-in-out 0s;
 }
 /* ANIMAÇÃO DO MENU */
@@ -165,11 +179,11 @@ a:hover{
 }
 
 #toggle:checked + .checkbox{
-    background-color: #fff;
+    background-color: var(--bg-conteudo);
 }
 /* O ~ é usado ṕra preceder algum item que no caso foi o menu */
 #toggle:checked ~ .menu{
-    box-shadow: 0px 0px 0px 100vmax #fff;/* vmax serve para dar um alargura ou altura maxima só que não exato como por exemplo ficara uma borda sobrando e um valor não exato*/
+    box-shadow: 0px 0px 0px 100vmax var(--bg-conteudo);/* vmax serve para dar um alargura ou altura maxima só que não exato como por exemplo ficara uma borda sobrando e um valor não exato*/
     z-index: 1;
 }
 
@@ -183,25 +197,82 @@ a:hover{
     visibility: hidden;
     opacity: 0;
 }
+.dark {
+    background-color: var(--bg-panel);
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
 
-#darkmode{
-    margin-left: 55%;
-    margin-top: 20%;
-    border: 1px solid black;
     border-radius: 15px;
-    background: #60E1E0;
-    transition: .7s ease-in-out 0s;
+
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "title switch"
+        "content content"
+    ;
 }
-#darkmode:hover{
-    background: #529c9c;
-    color: white;
-    font-size: 16px;
+.h1-dark {
+    font-size: 15px;
+    color: var(--color-text);
+    width: 100%;
+}
+.darkmode{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+.toggle1{
+    align-items: center;
 }
 
+.toggle1 label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: var(--color-buton);
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+.toggle1 label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background-color: gray;
+}
+
+input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
+
+.transicao{
+    background: var(--bg-conteudo);
+}
 /* SOBRE MIM */
 .titulo{
+    padding-top: 3%;
     font-size: 25px;
     text-align: center;
+    color: var(--color-text);
+    margin-top: 0;
 }
 .sobre-conteudo{
     display: flex;
@@ -229,19 +300,19 @@ a:hover{
 .escola{
     text-decoration: none;
     font-style: italic;
-    color: black;
+    color: var(--color-link);
 }
 #curriculo{
-    background-color: #60E1E0;
+    background-color: var(--color-curriculo-before);
     border-radius: 5px;
     padding: 15px 15px;
     text-decoration: none;
-    color: #fff;
+    color: var(--bg-conteudo);
     text-align: center;
     justify-content: center;
 }
 #curriculo:hover{
-    background-color: #eeeeee;
+    background-color: var(--color-curriculo);
     color: black;
     transition: 600ms ease-in-out 0s;
 
@@ -255,7 +326,8 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 3rem 0;
+    margin:0;
+    padding-bottom: 3%;
 }
 .card-container{
     display: flex;
@@ -271,7 +343,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #60E1E0;
+    background-color: var(--bg-header);
     background-image: url(assets/WhatsApp\ Image\ 2021-12-10\ at\ 21.51.20.jpeg);
     background-position: right;
     background-size: cover;
@@ -285,11 +357,11 @@ a:hover{
 .card-text{
     width: 40%;
     letter-spacing: 1px;
-    color: rgb(109, 109, 109);
+    color: var(--color-card);
 }
 .card-text a{
     text-decoration: none;
-    color: #60E1E0;
+    color: var(--color-link);
     font-style: italic;
     text-transform: uppercase;
 }
@@ -308,7 +380,7 @@ a:hover{
     width: 100px;
     border-radius: 50%;
     display: block;
-    border: 1px solid #fff;
+    border: 1px solid white;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
@@ -318,6 +390,7 @@ a:hover{
     letter-spacing: 4px;
     margin: 0;
     transition:  0.5s ease-in-out;
+    color: white;
 }
 .card-wrapper p{
     font-size: 0;
@@ -326,6 +399,7 @@ a:hover{
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
+    color: white;
 }
 .card:hover{
     filter: unset;
@@ -349,11 +423,11 @@ a:hover{
 .footer{
     width: 100%;
     height: 50px;
-    background-color: #60E1E0;
+    background-color: var(--bg-header);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1e1e2a;
+    color: var(--color-text);
 }
 .love {
     display:inline-block;
