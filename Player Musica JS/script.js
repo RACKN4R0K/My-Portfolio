@@ -1,7 +1,9 @@
 let audios = [
     {titulo:'Steve Universo - Lofi', Artista:'L.Dre', src:'musicas/steveuniverso.mp3', img:'imagens/steve universo.jpg'},
     {titulo:'twenty one pilots - Stressed Out', Artista:'Twenty one pilots', src:'musicas/twentyonepilots.mp3', img:'imagens/twentyonepilots.jpg'},
-    {titulo:'Oceans - Lofi Remix', Artista:'Shalom Margaret Cover', src:'musicas/lofi.mp3', img:'imagens/lofi.jpg'}
+    {titulo:'Oceans - Lofi Remix', Artista:'Shalom Margaret Cover', src:'musicas/lofi.mp3', img:'imagens/lofi.jpg'},
+    {titulo:'Se for amor ', Artista:'João Gomes e Vitor Fernandes', src:'musicas/joão gomes 1.mp3', img:'imagens/joão gomes.jpg'},
+    {titulo:'Aquelas coisas', Artista:'João Gomes e Tarcísio de Acordeon', src:'musicas/joão gomes.mp3', img:'imagens/joão gomes 1.jpg'}
 ]
 
 let musica = document.querySelector('audio')
@@ -23,14 +25,14 @@ musica.addEventListener('timeupdate', atualizarBarra)
 document.querySelector('.anterior').addEventListener('click', () => {
     indexMusica--
     if(indexMusica < 0 ){
-        indexMusica = 2
+        indexMusica = 4
     }
     renderizarMusica(indexMusica)
 })
 
 document.querySelector('.proxima').addEventListener('click', () => {
     indexMusica++
-    if(indexMusica > 2){
+    if(indexMusica > 4){
         indexMusica = 0
     }
     renderizarMusica(indexMusica)
