@@ -12,6 +12,8 @@ body {
     background: #eeeeee;
     justify-content: center;
     align-items: center;
+        scroll-behavior: smooth;
+
 }
 
 .checkout-panel {
